@@ -1,5 +1,6 @@
 import React from "react";
-import Button from "../../utils/Button";
+import AddEmployeeModal from "../../components/AddEmployeeModal";
+import AddEmployeeCsvModal from "../../components/AddEmployeeCsvModal"
 
 import { EmployeeTable } from "../../utils/EmployeeTable";
 
@@ -7,8 +8,8 @@ function Employees() {
   return (
     <>
       <div className="flex justify-end mb-5">
-        <Button name="Add Employee" style="mx-2" />
-        <Button name="Add Employee By CSV" />
+        <AddEmployeeModal />
+        <AddEmployeeCsvModal />
       </div>
       <div>
         <EmployeeTable />

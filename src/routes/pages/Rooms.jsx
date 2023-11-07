@@ -1,14 +1,14 @@
 import React from "react";
-import Button from "../../utils/Button";
-
+import AddRoomCsvModal from "../../components/Add RoomCsvModal";
+import AddRoomModal from "../../components/AddRoomModal";
 import { RoomTable } from "../../utils/RoomTable";
 
 function Rooms() {
   return (
     <>
       <div className="flex justify-end mb-5">
-        <Button name="Add Room" style="mx-2" />
-        <Button name="Add Room By CSV" />
+        <AddRoomModal />
+        <AddRoomCsvModal />
       </div>
       <div>
         <RoomTable />

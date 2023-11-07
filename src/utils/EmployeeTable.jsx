@@ -7,22 +7,26 @@ const nodes = [
     id: "0",
     empId: "NTE-778",
     name: "Ankit Kumar Sethi",
+    gender: "M",
   },
   {
     id: "1",
     empId: "NTE-779",
     name: "Test Employee 1",
+    gender: "F"
   },
   {
     id: "2",
     empId: "NTE-780",
     name: "Test Employee 2",
+    gender: "F"
   },
 ];
 
 const COLUMNS = [
   { label: "Employee ID", renderCell: (item) => item.empId },
   { label: "Name", renderCell: (item) => item.name },
+  { label: "Gender", renderCell: (item) => item.gender },
 ];
 
 export const EmployeeTable = () => {
